@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #2b6fb4; 
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.reg, .feedbackform, .thankyou {
+    width: 400px;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('form-background-image.jpg'); 
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.feedbackform, .thankyou {
+    display: none; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50; 
+}
+
+input[type="submit"] {
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: white; 
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.thankyou {
+    text-align: center; 
+    color: white; 
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="reg" id="reg-form">
+<h2>Registration Form</h2>
+<form class="form" id="registration">
+<input type="text" id="name" placeholder="Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="password" id="password" placeholder="Password" required>
+<input type="submit" value="Submit">
+
+</form>
+</div>
+<div class="feedbackform" id="feedbackform">
+<h2>Feedback Form</h2>
+<form id="feedback-form">
+<textarea id="feedback" placeholder="Type your feedback here" required></textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+<div class="thankyou" id="thankyou">
+<h2>Thank you for your Submission</h2>
+
+
+</div>
+<script>
+
+document.getElementById('registration').addEventListener('submit', function(e) {
+e.preventDefault();
+var name = document.getElementById('name').value;
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+console.log('Registration details:', name, email, password);
+
+// Hide registration form and show feedback form
+document.getElementById('reg-form').style.display = 'none';
+document.getElementById('feedbackform').style.display = 'block';
+});
+
+// Handle feedback form submission
+document.getElementById('feedback-form').addEventListener('submit', function(e) {
+e.preventDefault();
+var feedback = document.getElementById('feedback').value;
+
+console.log('Feedback:', feedback);
+
+// Show a thank-you message, then an alert, and reload the page
+document.getElementById('feedbackform').style.display = 'none';
+document.getElementById('thankyou').style.display = 'block';
+
+setTimeout(function() {
+
+alert('Thank you for your feedback! You will now be redirected to the registration page.');
+location.reload();
+}, 1000);
+});
+</script>
+
+</body>
+</html>
